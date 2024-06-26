@@ -1,0 +1,19 @@
+@import url(./styles/reset.scss);
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root
+{
+	--text: #ddd;
+	--title: #8e46c2;
+	--back-dark: #0d0613;
+	--back-normal: #3b1c50;
+	--back-light: #45215e;
+}
+
+*
+{
+	color: var(--text);
+	font-size: 1em;
+	font-family: "Source Code Pro";
+}
