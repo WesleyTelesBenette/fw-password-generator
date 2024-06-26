@@ -1,42 +1,46 @@
 
-<main>
-	<h1 class="title">
-		Gerador de Senhas
-		<hr class="divider"/>
-	</h1>
-	<form class="inputs" action="">
-		<div class="field">
-			<label for="keyPassword" class="title-field">Palavra-Chave</label>
-			<input
-				id="keyPassword"
-				class="input-field"
-				type="text"
-				placeholder="Palavra-Chave opcional..."
-			/>
-		</div>
+<div class="page">
+	<main>
+		<h1 class="title">
+			Gerador de Senhas
+			<hr class="divider"/>
+		</h1>
+		<form class="inputs" action="">
+			<div class="field">
+				<label for="keyPassword" class="title-field">Palavra-Chave</label>
+				<input
+					id="keyPassword"
+					class="input-field"
+					type="text"
+					placeholder="Palavra-Chave opcional..."
+				/>
+			</div>
 
-		<div class="field">
-			<label for="lenght" class="title-field">Quantidade de Caracteres</label>
-			<input
-				id="lenght"
-				class="input-field"
-				type="number"
-				required
-				placeholder="Tamanho da senha..."
-			/>
-		</div>
+			<div class="field">
+				<label for="lenght" class="title-field">Quantidade de Caracteres</label>
+				<input
+					id="lenght"
+					class="input-field"
+					type="number"
+					required
+					placeholder="Tamanho da senha..."
+				/>
+			</div>
 
-		<div class="field">
-			<label for="sucurityLevel" class="title-field">Nível de Segurança</label>
-			<select id="sucurityLevel" name="sucurityLevel" class="input-field" required>
-				<option class="option" value="" selected disabled>--Escolha um Nível</option>
-				<option class="option" value="0">0-9</option>
-				<option class="option" value="1">0-9 | a-z</option>
-				<option class="option" value="2">0-9 | a-z | A-Z</option>
-				<option class="option" value="3">0-9 | a-z | A-Z | $-&</option>
-			</select>
-		</div>
+			<div class="field">
+				<label for="sucurityLevel" class="title-field">Nível de Segurança</label>
+				<select id="sucurityLevel" name="sucurityLevel" class="input-field" required>
+					<option class="option" value="" selected disabled>--Escolha um Nível</option>
+					<option class="option" value="0">0-9</option>
+					<option class="option" value="1">0-9 | a-z</option>
+					<option class="option" value="2">0-9 | a-z | A-Z</option>
+					<option class="option" value="3">0-9 | a-z | A-Z | $-&</option>
+				</select>
+			</div>
 
-		<input class="button" type="submit"/>
-	</form>
-</main>
+			<input class="button" type="submit"/>
+		</form>
+	</main>
+
+	<app-footer/>
+</div>
