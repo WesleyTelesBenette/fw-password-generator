@@ -1,0 +1,50 @@
+
+header
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 5%;
+
+	width: 90%;
+	height: 55px;
+	background-color: var(--back-normal);
+
+	.title
+	{
+		margin-right: 25px;
+		font-size: 1.3em;
+		font-family: "Philosopher";
+		font-weight: 800;
+	}
+
+	.tools
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
+
+		.image
+		{
+			height: 35px;
+
+			transition: opacity .2s ease-in-out;
+
+			@media only screen and (any-hover: hover)
+			{
+				&:hover
+				{
+					cursor: pointer;
+					opacity: 0.6;
+				}
+			}
+			&:active
+			{
+				opacity: 0.3;
+			}
+		}
+	}
+}
