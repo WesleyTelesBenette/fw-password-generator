@@ -2,6 +2,9 @@
 
 Um projeto Open Source de um Web App para gerar senhas, baseado em específicações e preferências do usuário.
 
+![](https://github.com/WesleyTelesBenette/my-sources-for-docs/blob/main/fw-password-generator/preview.png)
+<br/><br/>
+
 # 🛠️ Featurs em Construção
 
 - Script para gerar a senha.
