@@ -2,13 +2,12 @@
 
 Um projeto Open Source de um Web App para gerar senhas, baseado em específicações e preferências do usuário.
 
-🛠️ Featurs em Construção
+# 🛠️ Featurs em Construção
 
 - Script para gerar a senha.
 - Resposta visual à criação da senha.
 - Refinamentos gerais.
 
-<br/>
 
 ## 💻 Como executar o Projeto localmente?
 
