@@ -17,7 +17,39 @@
 		width: 100%;
 	}
 
-	main
+	.container
+	{
+		transform: scaleY(0);
+		position: fixed;
+
+		&.show
+		{
+			transform: scaleY(1);
+			animation: show .3s ease-in-out;
+			position: relative;
+		}
+
+		&.hidden
+		{
+			animation: hidden .3s ease-in-out;
+			transform: scaleY(0);
+			position: fixed;
+		}
+
+		@keyframes show
+		{
+			0% { transform: scaleY(0); }
+			100% { transform: scaleY(1); }
+		}
+
+		@keyframes hidden
+		{
+			0% { transform: scaleY(1); }
+			100% { transform: scaleY(0); }
+		}
+	}
+
+	main, .container
 	{
 		display: flex;
 		flex-direction: column;
