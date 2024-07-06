@@ -14,6 +14,7 @@
 					class="input-field"
 					type="text"
 					placeholder="Palavra-Chave opcional..."
+					[(ngModel)]="wordUser" [ngModelOptions]="{standalone: true}"
 				/>
 			</div>
 
@@ -25,21 +26,22 @@
 					type="number"
 					required
 					placeholder="Tamanho da senha..."
+					[(ngModel)]="length" [ngModelOptions]="{standalone: true}"
 				/>
 			</div>
 
 			<div class="field">
 				<label for="sucurityLevel" class="title-field">Nível de Segurança</label>
-				<select id="sucurityLevel" name="sucurityLevel" class="input-field" required>
-					<option class="option" value="" selected disabled>--Escolha um Nível</option>
-					<option class="option" value="0">0-9</option>
-					<option class="option" value="1">0-9 | a-z</option>
-					<option class="option" value="2">0-9 | a-z | A-Z</option>
-					<option class="option" value="3">0-9 | a-z | A-Z | $-&</option>
+				<select id="sucurityLevel" name="sucurityLevel" class="input-field" required [(ngModel)]="securityLevel" [ngModelOptions]="{standalone: true}">
+					<option class="option" value="-1" selected disabled>--Escolha um Nível</option>
+					<option class="option" value="1">0-9</option>
+					<option class="option" value="2">0-9 | a-z</option>
+					<option class="option" value="3">0-9 | a-z | A-Z</option>
+					<option class="option" value="4">0-9 | a-z | A-Z | $-&</option>
 				</select>
 			</div>
 
-			<input class="button" type="submit" value="Gerar"/>
+			<input class="button" type="submit" value="Gerar" (click)="generatePassword()"/>
 		</form>
 	</main>
 
