@@ -6,7 +6,7 @@
 			<app-inputs (action)="actionVisibilitElements($event)"/>
 		</div>
 		<div #containerResult class="container">
-			<app-result [password]="passwordResult"/>
+			<app-result [password]="passwordResult" (action)="actionVisibilitElements($event)"/>
 		</div>
 	</main>
 

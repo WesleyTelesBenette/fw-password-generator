@@ -1,2 +1,8 @@
 
-<p>{{ password }}</p>
+<div class="container-result">
+	<p>{{ password }}</p>
+	<div class="buttons">
+		<input class="button" type="button" value="Voltar" (click)="callAction()"/>
+		<input class="button" type="button" value="Copiar" (click)="copyPassword()"/>
+	</div>
+</div>

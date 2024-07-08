@@ -45,11 +45,16 @@ export class HomePageComponent
 
 			elementHidden.classList.remove('show');
 			elementHidden.classList.add('hidden');
-			elementHidden.addEventListener('animationend', () =>
-			{
-				elementShow.classList.add('show');
-			});
 
+			const showElementVisible = () =>
+			{
+				elementShow.classList.remove('hidden');
+				elementShow.classList.add('show');
+
+				elementHidden.removeEventListener('animationend', showElementVisible)
+			}
+
+			elementHidden.addEventListener('animationend', showElementVisible);
 		}
 	}
 }

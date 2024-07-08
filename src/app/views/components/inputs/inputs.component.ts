@@ -29,7 +29,10 @@ export class InputsComponent
 		if (newPassword)
 		{
 			this.action.emit(newPassword);
-			console.log(newPassword);
+
+			this.wordUser = '';
+			this.length = 0;
+			this.securityLevel = -1;
 		}
 	}
 }
