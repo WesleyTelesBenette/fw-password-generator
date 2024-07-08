@@ -1,7 +1,12 @@
+import { Injectable } from "@angular/core";
 
-export default class GeneratePasswordService
+@Injectable
+({
+	providedIn: 'root'
+})
+export class GeneratePasswordService
 {
-	private static caracters: string[] =
+	private caracters: string[] =
 	[
 		'0123456789',
 		'abcedfghijklmnopqrstuvwxyz',
@@ -9,7 +14,7 @@ export default class GeneratePasswordService
 		'*+!@#$%&*()-_={}/:;,.\\^~`[]|'
 	];
 
-	public static Generate(wordUser: string = '', length: number, security: number): string | any
+	public Generate(wordUser: string = '', length: number, security: number): string | any
 	{
 		//Checa parâmetros
 		if ((length <= 0) || (wordUser.length > length) || ((security < 1) || (security > this.caracters.length)))
