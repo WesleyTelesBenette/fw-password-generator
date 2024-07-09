@@ -22,9 +22,11 @@
 				id="lenght"
 				class="input-field"
 				type="number"
-				required
 				placeholder="Tamanho da senha..."
+				required
 				[(ngModel)]="length" [ngModelOptions]="{standalone: true}"
+				(change)="limitedLength($event)"
+				(keydown)="limitedLength($event)"
 			/>
 		</div>
 
