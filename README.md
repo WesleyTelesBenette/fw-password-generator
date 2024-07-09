@@ -7,8 +7,9 @@ Um projeto Open Source de um Web App para gerar senhas, baseado em específicaç
 
 # 🛠️ Featurs em Construção
 
-- Script para gerar a senha.
-- Resposta visual à criação da senha.
+- ~~Script para gerar a senha~~.
+- ~~Resposta visual à criação da senha~~.
+- Resposta visual ao copiar senha.
 - Refinamentos gerais.
 
 
