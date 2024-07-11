@@ -49,7 +49,7 @@ export class InputsComponent
 			this.action.emit(newPassword);
 
 			this.wordUser = '';
-			this.length = 0;
+			this.length = 12;
 			this.securityLevel = -1;
 		}
 	}
