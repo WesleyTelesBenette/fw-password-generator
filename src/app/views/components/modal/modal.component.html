@@ -1,1 +1,16 @@
-<p>modal works!</p>
+
+<div class="modal fade" [id]="modalId" tabindex="-1" aria-labelledby="modalComponentLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modal-container">
+      <div class="modal-header modal-container-border">
+        <h1 class="modal-title fs-5 modal-container-title" id="modalComponentLabel">{{ title }}</h1>
+      </div>
+      <div class="modal-body">
+        <ng-content/>
+      </div>
+      <div class="modal-footer modal-container-border modal-container-buttons">
+        <button type="button" class="modal-container-button" data-bs-dismiss="modal">Entendi!</button>
+      </div>
+    </div>
+  </div>
+</div>

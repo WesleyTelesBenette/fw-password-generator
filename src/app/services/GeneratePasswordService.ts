@@ -30,7 +30,7 @@ export class GeneratePasswordService
 			//Index do "caracters" que será pego esse caractér
 			const index: number =  Math.floor(Math.random() * (security));
 
-			//Caracter escolhido aleatóriamente
+			//Caractér escolhido aleatóriamente
 			const charIndex = Math.floor(Math.random() * this.caracters[index].length);
 			const char: string = this.caracters[index][charIndex];
 

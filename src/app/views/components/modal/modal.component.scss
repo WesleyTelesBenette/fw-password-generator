@@ -1,0 +1,50 @@
+
+.modal-container
+{
+	background-color: var(--back-dark);
+
+	.modal-container-title
+	{
+		color: var(--title);
+	}
+
+	.modal-container-border
+	{
+		border-color: var(--title);
+	}
+
+	.modal-container-buttons
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+
+		.modal-container-button
+		{
+			width: 50%;
+			height: 40px;
+			border-radius: 15px;
+			background-color: var(--back-light);
+			border: 2px solid var(--back-light);
+
+			@media only screen and (any-hover: hover)
+			{
+				&:hover
+				{
+					cursor: pointer;
+
+					background-color: var(--back-normal);
+					border: 2px solid var(--back-normal);
+				}
+			}
+			&:active
+			{
+				background-color: transparent;
+				border: 2px solid var(--back-light);
+
+				color: var(--title);
+			}
+		}
+	}
+}
