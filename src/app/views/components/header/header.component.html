@@ -2,13 +2,11 @@
 <header>
 	<h2 class="title">FW Password Generator</h2>
 	<div class="tools">
-		<a data-bs-toggle="modal" data-bs-target="#modalInfo"><img class="image" src="./assets/info.svg"/></a>
+		<a data-bs-toggle="modal" data-bs-target="#helpModal"><img class="image" src="./assets/info.svg"/></a>
 		<a href="https://github.com/WesleyTelesBenette/fw-password-generator" target="_blank">
 			<img class="image" src="./assets/github.svg"/>
 		</a>
 	</div>
 </header>
 
-<app-modal [modalId]="'modalInfo'" [title]="'Ajuda'">
-	Conteúdo...
-</app-modal>
+<app-help-modal/>

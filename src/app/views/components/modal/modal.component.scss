@@ -3,8 +3,17 @@
 {
 	background-color: var(--back-dark);
 
+	.modal-body
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
 	.modal-container-title
 	{
+		font-family: "Philosopher";
+		font-weight: 800;
 		color: var(--title);
 	}
 

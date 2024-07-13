@@ -1,0 +1,55 @@
+
+<app-modal [title]="'Ajuda'" [modalId]="'helpModal'">
+
+	<p>O <span class="modalComponent-mark">FW Password Generator</span> é um sistema para gerar senhas,
+	onde você pode personalizar algumas propriedades dessa senha. Como por exemplo:</p>
+
+	<span class="modalComponent-title">Palavra-Chave</span>
+	<p>Uma palavra que pode ser inserida na senha (de forma aleatória).</p>
+	<p>Exemplo:</p>
+	<p>
+		<span class="modalComponent-space-left-1">
+			<span class="modalComponent-mark">Palavra</span> - girafa
+		</span>
+		<br/>
+		<span class="modalComponent-space-left-1">
+			<span class="modalComponent-mark">Senha</span> &nbsp;&nbsp;- 145girafa54871916
+		</span>
+	<p>
+		Ps. Lembre-se de não inserir uma palavra-chave maior do que o tamanho da senha,
+		é provável que uma senha não consiga ser gerada.
+	</p>
+
+	<span class="modalComponent-title">Quantidade de Caracteres</span>
+	<p>O tamanho exato que a senha vai ter.</p>
+	<p>Exemplo:</p>
+	<p>
+		<span class="modalComponent-space-left-1">
+			<span class="modalComponent-mark">Tamanho</span> - 18
+		</span>
+		<br/>
+		<span class="modalComponent-space-left-1">
+			<span class="modalComponent-mark">Senha</span> &nbsp;&nbsp;- g7s04n7k9s0a3nf7g0
+		</span>
+	</p>
+	<p>
+		Ps. O tamanho deve ser entre 1 e 60 mil.
+	</p>
+
+	<span class="modalComponent-title">Nível de Segurança</span>
+	<p>O tipo de caracteres que vão compor sua senha</p>
+	<p>Exemplo:</p>
+	<p>
+		<span class="modalComponent-space-left-1">
+			<span class="modalComponent-mark">Nível</span> - 0-9 | a-z
+		</span>
+		<br/>
+		<span class="modalComponent-space-left-1">
+			<span class="modalComponent-mark">Senha</span> - a1b2c3d4e5f6
+		</span>
+	</p>
+	<p>
+		Ps. É necessário escolher um nível de segurança, ou a senha não será gerada.
+	</p>
+
+</app-modal>
