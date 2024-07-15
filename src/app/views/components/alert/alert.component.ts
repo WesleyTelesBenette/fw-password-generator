@@ -11,5 +11,5 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 export class AlertComponent
 {
 	@Input() content: string = '';
-	@Input() onAlert: boolean | any;
+	@Input() onAlert: boolean | any = undefined;
 }

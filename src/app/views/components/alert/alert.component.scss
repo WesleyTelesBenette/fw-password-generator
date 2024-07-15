@@ -21,6 +21,11 @@
 		transform: scaleY(0);
 	}
 
+	&.undefined
+	{
+		opacity: 0;
+	}
+
 	@keyframes show
 	{
 		0% { transform: scaleY(0); }

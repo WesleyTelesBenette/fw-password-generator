@@ -14,7 +14,7 @@ export class ResultComponent
 {
 	@Output() action: EventEmitter<any> = new EventEmitter<any>();
 	@Input() password: string = '';
-	public activeAlert: boolean | any;
+	public activeAlert: boolean | any = undefined;
 
 	public callAction()
 	{
@@ -25,9 +25,8 @@ export class ResultComponent
 	{
 		navigator['clipboard'].writeText(this.password).then().catch(() => console.error('Erro ao copiar senha...'));
 		this.activeAlert = true;
-		console.log('Alert');
+
 		await new Promise(r => setTimeout(r, 5000));
-		console.log('Close Alert');
 		this.activeAlert = false;
 	}
 }
