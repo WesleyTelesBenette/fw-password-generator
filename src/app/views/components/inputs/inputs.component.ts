@@ -28,13 +28,14 @@ export class InputsComponent
 		if (input)
 		{
 			let valueInput = Number(input.value);
-			const min = 1;
+			const min = 0;
 			const max = 60000;
 
 			if (valueInput < min) valueInput = min;
 			if (valueInput > max) valueInput = max;
 
 			this.length = Math.floor(valueInput);
+
 			input.value = valueInput.toString();
 		}
 	}

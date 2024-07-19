@@ -25,8 +25,8 @@
 				placeholder="Tamanho da senha..."
 				required
 				[(ngModel)]="length" [ngModelOptions]="{standalone: true}"
+				(keyup)="limitedLength($event)"
 				(change)="limitedLength($event)"
-				(keydown)="limitedLength($event)"
 			/>
 		</div>
 
