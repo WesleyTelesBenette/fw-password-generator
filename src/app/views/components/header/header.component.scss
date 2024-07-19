@@ -1,6 +1,8 @@
 
 header
 {
+	z-index: 1;
+	position: fixed;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -14,6 +16,7 @@ header
 	.title
 	{
 		margin-right: 25px;
+		margin-bottom: 0px;
 		font-size: 1.3em;
 		font-family: "Philosopher";
 		font-weight: 800;
@@ -45,6 +48,22 @@ header
 			{
 				opacity: 0.3;
 			}
+		}
+	}
+}
+
+.space
+{
+	margin-bottom: 42px;
+}
+
+@media only screen and (max-width: 372px)
+{
+	header
+	{
+		.title
+		{
+			font-size: 1em;
 		}
 	}
 }

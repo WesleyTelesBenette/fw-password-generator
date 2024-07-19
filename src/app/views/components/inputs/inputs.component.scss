@@ -5,7 +5,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;
+	gap: 15px;
 	overflow: hidden;
 
 	width: 100%;
@@ -38,7 +38,7 @@
 		gap: 30px;
 		padding: 30px 30px 20px 35px;
 
-		width: 25%;
+		width: 35%;
 		border: 1px solid var(--back-light);
 		border-radius: 15px;
 
@@ -124,7 +124,7 @@
 	}
 }
 
-@media only screen and (max-width: 1200px)
+@media only screen and (max-width: 1000px)
 {
 	.container-inputs
 	{
@@ -135,14 +135,13 @@
 
 		.inputs
 		{
-			width: 40%;
-			max-width: calc(65% - 100px);
+			width: 50%;
 		}
 	}
 }
 
 
-@media only screen and (max-width: 700px)
+@media only screen and (max-width: 730px)
 {
 	.container-inputs
 	{
@@ -153,8 +152,18 @@
 
 		.inputs
 		{
-			width: 90%;
-			max-width: calc(90% - 100px);
+			width: 70%;
+		}
+	}
+}
+
+@media only screen and (max-width: 730px)
+{
+	.container-inputs
+	{
+		.inputs
+		{
+			width: 80%;
 		}
 	}
 }
@@ -166,12 +175,12 @@
 	{
 		.title
 		{
-			font-size: 2.2em;
+			font-size: 2.3em;
 		}
 
 		.inputs
 		{
-			width: 100%;
+			width: 90%;
 
 			.field
 			{
@@ -181,7 +190,7 @@
 				{
 					min-width: calc(100% - 22px);
 					max-width: calc(100% - 22px);
-					font-size: 0.7em;
+					font-size: 0.9em;
 				}
 
 
@@ -192,5 +201,13 @@
 				width: 98%;
 			}
 		}
+	}
+}
+
+@media only screen and (max-width: 370px)
+{
+	.container-inputs
+	{
+		.inputs { .field { .input-field, .option { font-size: 0.7em; }}}
 	}
 }
