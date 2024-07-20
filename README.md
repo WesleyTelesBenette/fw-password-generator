@@ -1,12 +1,12 @@
 # FW Password Generator
 
-Um projeto Open Source de um Web App para gerar senhas, baseado em específicações e preferências do usuário.
+Um projeto Open Source de um Web App para gerar senhas, baseado em especificações e preferências do usuário.
 
 ![Imagem do Sistema](https://github.com/WesleyTelesBenette/my-sources-for-docs/blob/main/media-fw-password-generator/main-page.png)
 <br/><br/>
 
 ## 🛠️ Recursos
-Nele você pode gerar senhas de forma rápida e eficiente, com especificações personalizadas:
+Nele você pode gerar senhas de forma rápida e eficiente, de forma personalizada, a senha podendo ter:
 - ✏️ Uma palavra-chave (para estar entre os caracteres da senha)
 - 📏 Tamanho de 1 a 60.000
 - 🔏 Tipos de caracteres da senha
@@ -15,7 +15,7 @@ Nele você pode gerar senhas de forma rápida e eficiente, com especificações 
 	<img src="https://github.com/WesleyTelesBenette/my-sources-for-docs/blob/main/media-fw-password-generator/example-result-page.png" width="80%" />
 </p>
 
-E caso você tenha alguma dúvida de como utlizar algum dos 3 campos, temos um manual de instruções dentro do site (um botão no canto superior direito).
+E caso você tenha alguma dúvida de como utilizar algum dos 3 campos, temos um manual de instruções dentro do site (um botão no canto superior direito).
 
 <img src="https://github.com/WesleyTelesBenette/my-sources-for-docs/blob/main/media-fw-password-generator/help-modal.png" width="80%" />
 <br/>
@@ -37,7 +37,7 @@ npm install -g @angular/cli
 ```
 
 ### Versões Utilizadas
-Caso algo não funcione, pode ser algum problemas com as versões utiulizadas:
+Caso algo não funcione, pode ser algum problema com as versões utilizadas:
 - Angular v17.3.8
 	- rxjs v7.8.1
  	- zone.js v0.14.7
