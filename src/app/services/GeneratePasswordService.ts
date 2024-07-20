@@ -44,12 +44,10 @@ export class GeneratePasswordService
 			//Index para ser substituído
 			const indexWordUser =  Math.floor(Math.random() * (password.length-wordUser.length+1));
 
-			if (indexWordUser > 0)
-			{
-				return password.slice(0, indexWordUser)
-					+ wordUser
-					+ password.slice(indexWordUser+wordUser.length, password.length);
-			}
+			//Substitui a string
+			return password.slice(0, indexWordUser)
+				+ wordUser
+				+ password.slice(indexWordUser+wordUser.length, password.length);
 		}
 
 		return password;
