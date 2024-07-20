@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { AlertComponent } from '../alert/alert.component';
-import { timeout } from 'rxjs';
 
 @Component
 ({
@@ -18,7 +17,9 @@ export class ResultComponent
 
 	public callAction()
 	{
+		this.activeAlert = false;
 		this.action.emit();
+		this.activeAlert = undefined;
 	}
 
 	public async copyPassword()
@@ -27,6 +28,6 @@ export class ResultComponent
 		this.activeAlert = true;
 
 		await new Promise(r => setTimeout(r, 5000));
-		this.activeAlert = false;
+		this.activeAlert = undefined;
 	}
 }
